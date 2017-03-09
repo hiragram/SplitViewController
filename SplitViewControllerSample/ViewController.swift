@@ -7,19 +7,18 @@
 //
 
 import UIKit
+import SplitViewController
+import SafariServices
 
 class ViewController: UIViewController {
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+  @IBAction func buttonDidTap(_ sender: Any) {
+    let upperVC = SFSafariViewController.init(url: URL.init(string: "https://retrip.jp/articles/78810/")!)
+    let lowerVC = UIViewController.init()
+    lowerVC.view.backgroundColor = UIColor.cyan
+    let splitVC = SplitViewController.init(upperViewController: upperVC, lowerViewController: lowerVC)
+    self.present(splitVC, animated: true, completion: nil)
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
 
 }
 

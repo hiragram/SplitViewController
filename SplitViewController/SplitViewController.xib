@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplitViewController" customModule="SplitViewController" customModuleProvider="target">
+            <connections>
+                <outlet property="lowerContainer" destination="bvU-PA-SpT" id="hQN-B0-8fu"/>
+                <outlet property="slider" destination="edR-Qd-TgV" id="lWs-IX-3AO"/>
+                <outlet property="upperContainer" destination="Yi9-HA-nnT" id="Mmd-wZ-MuA"/>
+                <outlet property="upperContainerHeight" destination="AT7-Xy-xsi" id="XyZ-Yz-Ofe"/>
+                <outlet property="view" destination="CmQ-km-zap" id="QMv-5K-Mxn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="CmQ-km-zap">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yi9-HA-nnT">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="335"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="335" id="AT7-Xy-xsi"/>
+                    </constraints>
+                </containerView>
+                <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvU-PA-SpT">
+                    <rect key="frame" x="0.0" y="343" width="375" height="324"/>
+                </containerView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="edR-Qd-TgV">
+                    <rect key="frame" x="173" y="323" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="UOO-A9-0Cl"/>
+                        <constraint firstAttribute="width" constant="30" id="q8d-Ui-UWC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bvU-PA-SpT" secondAttribute="trailing" id="Kwi-Tf-pKF"/>
+                <constraint firstAttribute="trailing" secondItem="Yi9-HA-nnT" secondAttribute="trailing" id="MLG-Uc-d3C"/>
+                <constraint firstItem="edR-Qd-TgV" firstAttribute="top" secondItem="Yi9-HA-nnT" secondAttribute="bottom" constant="-12" id="W1Z-7O-b5r"/>
+                <constraint firstAttribute="bottom" secondItem="bvU-PA-SpT" secondAttribute="bottom" id="ZYV-oC-K1G"/>
+                <constraint firstItem="bvU-PA-SpT" firstAttribute="leading" secondItem="CmQ-km-zap" secondAttribute="leading" id="Zib-eU-VUk"/>
+                <constraint firstItem="bvU-PA-SpT" firstAttribute="top" secondItem="Yi9-HA-nnT" secondAttribute="bottom" constant="8" id="aqU-8M-lVB"/>
+                <constraint firstItem="edR-Qd-TgV" firstAttribute="centerX" secondItem="CmQ-km-zap" secondAttribute="centerX" id="dxf-IY-2j6"/>
+                <constraint firstItem="Yi9-HA-nnT" firstAttribute="top" secondItem="CmQ-km-zap" secondAttribute="top" id="plI-Vd-3Yb"/>
+                <constraint firstItem="Yi9-HA-nnT" firstAttribute="leading" secondItem="CmQ-km-zap" secondAttribute="leading" id="z65-eK-XO5"/>
+            </constraints>
+            <point key="canvasLocation" x="76" y="-101"/>
+        </view>
+    </objects>
+</document>

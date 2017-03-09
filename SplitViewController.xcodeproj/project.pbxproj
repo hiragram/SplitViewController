@@ -13,6 +13,9 @@
 		604A60201E71B9050082EF85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604A601E1E71B9050082EF85 /* Main.storyboard */; };
 		604A60221E71B9050082EF85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604A60211E71B9050082EF85 /* Assets.xcassets */; };
 		604A60251E71B9050082EF85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604A60231E71B9050082EF85 /* LaunchScreen.storyboard */; };
+		604A602D1E71BA3D0082EF85 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A602C1E71BA3D0082EF85 /* SplitViewController.swift */; };
+		604A60311E71BF190082EF85 /* SplitViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604A60091E71B7F50082EF85 /* SplitViewController.framework */; };
+		604A60331E71BFE20082EF85 /* SplitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 604A60321E71BFE20082EF85 /* SplitViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,8 @@
 		604A60211E71B9050082EF85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		604A60241E71B9050082EF85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		604A60261E71B9050082EF85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		604A602C1E71BA3D0082EF85 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		604A60321E71BFE20082EF85 /* SplitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplitViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				604A60311E71BF190082EF85 /* SplitViewController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				604A600C1E71B7F80082EF85 /* SplitViewController.h */,
+				604A602C1E71BA3D0082EF85 /* SplitViewController.swift */,
+				604A60321E71BFE20082EF85 /* SplitViewController.xib */,
 				604A600D1E71B7F80082EF85 /* Info.plist */,
 			);
 			path = SplitViewController;
@@ -148,6 +156,7 @@
 					604A60081E71B7F50082EF85 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = Q3N95Y73WF;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					604A60171E71B9050082EF85 = {
@@ -181,6 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				604A60331E71BFE20082EF85 /* SplitViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				604A602D1E71BA3D0082EF85 /* SplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +348,7 @@
 		604A60121E71B7F80082EF85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Q3N95Y73WF;
@@ -349,6 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.yura.SplitViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -356,6 +369,7 @@
 		604A60131E71B7F80082EF85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Q3N95Y73WF;
