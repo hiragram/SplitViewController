@@ -40,8 +40,22 @@ public class SplitViewController: UIViewController {
 
   public override func loadView() {
     super.loadView()
+  }
+
+  public override func viewDidLoad() {
+    super.viewDidLoad()
+
+    addChildViewController(upperVC)
+    addChildViewController(lowerVC)
+
+    upperVC.willMove(toParentViewController: self)
+    lowerVC.willMove(toParentViewController: self)
+
     upperContainer.addSubview(upperVC.view)
     lowerContainer.addSubview(lowerVC.view)
+
+    upperVC.didMove(toParentViewController: self)
+    lowerVC.didMove(toParentViewController: self)
 
     upperVC.view.translatesAutoresizingMaskIntoConstraints = false
     lowerVC.view.translatesAutoresizingMaskIntoConstraints = false

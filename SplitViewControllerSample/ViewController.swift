@@ -13,12 +13,10 @@ import SafariServices
 class ViewController: UIViewController {
 
   @IBAction func buttonDidTap(_ sender: Any) {
-    let upperVC = SFSafariViewController.init(url: URL.init(string: "https://retrip.jp/articles/78810/")!)
-    let lowerVC = UIViewController.init()
-    lowerVC.view.backgroundColor = UIColor.cyan
+    let upperVC = SFSafariViewController.init(url: URL.init(string: "https://twitter.com/hiragram")!)
+    let lowerVC = UIStoryboard.init(name: "TableViewController", bundle: nil).instantiateInitialViewController()!
     let splitVC = SplitViewController.init(upperViewController: upperVC, lowerViewController: lowerVC)
     self.present(splitVC, animated: true, completion: nil)
   }
 
 }
-
